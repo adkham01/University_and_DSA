@@ -3,22 +3,18 @@
 using namespace std;
 
 void rotate(int nums[], int k, int size){
-    vector<int> v;
-    for(int i = size - 1; i <= k; i--){
-        v.push_back(nums[i]);
+    int m = nums[0];
+    for(int i = 0; i < size; i++){
+        int temp = nums[i];
+        nums[i] = nums[i+1];
+        nums[size-1-i] = temp;
     }
+    nums[size-1] = m;
 
-    // for(int i = 0; i < size; i++){
-    //     cout << "Nums"<< nums[i] << endl;
-    //     v.push_back(nums[i]);
-    //     cout << "Vector"<< v[i] << endl;
-    //     nums[i] = v[i];
-    // }
-
-    for (size_t i = 0; i < v.size(); ++i) {
-        cout << v[i] << " ";
+    for(int i = 0; i < size; i++){
+        cout<< nums[i] << "\t";
     }
-    cout << endl;
+    cout << "\n";
 
 }
 

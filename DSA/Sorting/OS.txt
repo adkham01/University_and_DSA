@@ -1,0 +1,33 @@
+OOP
+What is the Requirement to Create Objects in Java?
+1) To store entities data temporarily in java applications we need objects.
+2) To Access the members of any particular class we need objects.
+
+2) Generating Identities for the Object:
+After creating a block of memory [Object] for JVM requirements, Heap manager will
+assign an integer value as an identity for the object called as "HashCode".
+
+Constructors:
+1) Constructor is a java feature; it can be used to create Object.
+2) The role of the constructors in Object creation is to provide initial values inside the
+object.
+3) In java applications, Constructors are executed exactly at the time of creating objects,
+not before creating objects and not after creating objects.
+4) The main utilization of constructors is to provide initializations for class level variables
+mainly instance variable.
+5) Constructors must have same name of the respective class.
+6) Constructors are not having return types
+
+Instance Variables:
+✽ Instance Variable is a normal Java variable, whose values will be varied from one
+instance to another instance of an object.
+
+
+'static' keyword:
+'static' is a Java keyword, it will improve sharability in Java applications.
+In Java applications, static keyword will be utilized in the following four ways.
+1) Static variables
+2) Static methods
+3) Static blocks
+4) Static import 
+4) Static import 
